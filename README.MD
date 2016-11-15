@@ -1,4 +1,4 @@
-# Scalameta SBT/Giter8 template [![Build Status](https://travis-ci.org/lloydmeta/scalameta.g8.svg?branch=feature%2Ftravis)](https://travis-ci.org/lloydmeta/scalameta.g8)
+# Scalameta [![Build Status](https://travis-ci.org/lloydmeta/scalameta.g8.svg?branch=master)](https://travis-ci.org/lloydmeta/scalameta.g8)
 
 If you have SBT 0.13.13 or later installed:
 
