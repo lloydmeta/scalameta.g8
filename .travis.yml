@@ -5,7 +5,7 @@ language: scala
 script:
   - sbt new file://${TRAVIS_BUILD_DIR} --name=scalameta-test
   - cd scalameta-test
-  - sbt compile
+  - sbt app/run
 
 cache:
   directories:
