@@ -3,8 +3,7 @@ sudo: false
 language: scala
 
 script:
-  - cd ..
-  - sbt new file://${TRAVIS_BUILD_DIR} < ${TRAVIS_BUILD_DIR}/travis-input
+  - sbt new file://../${TRAVIS_BUILD_DIR} --name=scalameta-test
   - cd scalameta-test
   - sbt run
 
