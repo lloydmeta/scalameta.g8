@@ -11,3 +11,7 @@ If you have Giter8 installed:
 To learn more about writing macro annotations:
 
 http://scalameta.org/tutorial/#Part4-Macroannotations
+
+## Credit
+
+Based on [scalameta/sbt-macro-example](https://github.com/scalameta/sbt-macro-example)
