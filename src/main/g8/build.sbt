@@ -8,7 +8,7 @@ version := "$version$"
 scalaVersion in ThisBuild := "2.11.8"
 
 libraryDependencies ++= Seq(
-  "org.scalatest" %% "scalatest" % "$scalatest_version$" % "test"
+  "org.scalatest" %% "scalatest" % "$scalatest_version$" % Test
 )
 
 
@@ -22,8 +22,7 @@ lazy val metaMacroSettings: Seq[Def.Setting[_]] = Seq(
   // A dependency on macro paradise 3.x is required to both write and expand
   // new-style macros.  This is similar to how it works for old-style macro
   // annotations and a dependency on macro paradise 2.x.
-  addCompilerPlugin(
-    "org.scalameta" % "paradise" % "3.0.0.132" cross CrossVersion.full),
+  addCompilerPlugin("org.scalameta" % "paradise" % "3.0.0-M7" cross CrossVersion.full),
   scalacOptions += "-Xplugin-require:macroparadise",
   // temporary workaround for https://github.com/scalameta/paradise/issues/10
   scalacOptions in (Compile, console) := Seq(), // macroparadise plugin doesn't work in repl yet.
@@ -62,3 +61,5 @@ scalacOptions ++= Seq(
   "-Xfuture",
   "-Ywarn-unused-import"
 )
+
+wartremoverErrors in (Compile, compile) ++= Warts.unsafe

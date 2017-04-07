@@ -1,4 +1,4 @@
-package examples
+package $organization;format="lower,word"$
 
 @main
 object MyApp {
