@@ -4,6 +4,8 @@ language: scala
 
 scala: $scala_version$
 
+jdk: oraclejdk8
+
 cache:
   directories:
   - \$HOME/.sbt/0.13
