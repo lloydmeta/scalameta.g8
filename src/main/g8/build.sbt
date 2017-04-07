@@ -5,7 +5,7 @@ organization := "$organization$"
 version := "$version$"
 
 // scala.meta macros are at the moment only supported in 2.11.
-scalaVersion in ThisBuild := "2.11.8"
+scalaVersion in ThisBuild := "$scala_version$"
 
 libraryDependencies ++= Seq(
   "org.scalatest" %% "scalatest" % "$scalatest_version$" % Test
