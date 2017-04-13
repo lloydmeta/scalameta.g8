@@ -1,4 +1,4 @@
-package $organization;format="lower,word"$
+package $organization;format="lower"$
 
 import scala.meta._
 
