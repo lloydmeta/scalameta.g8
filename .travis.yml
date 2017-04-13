@@ -4,6 +4,8 @@ language: scala
 
 jdk: oraclejdk8
 
+scala: 2.12.1
+
 script:
   - sbt new file://${TRAVIS_BUILD_DIR} --name=scalameta-test
   - cd scalameta-test
